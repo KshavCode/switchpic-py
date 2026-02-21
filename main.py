@@ -4,10 +4,10 @@ from PIL import Image
 import time
 from pathlib import Path
 
-class PixelBridgeVanilla:
+class SwitchPicVanilla:
     def __init__(self, root):
         self.root = root
-        self.root.title("PixelBridge - Format Converter")
+        self.root.title("SwitchPic - Format Converter")
         self.root.geometry("550x450") 
         self.root.resizable(False, False)
         
@@ -37,7 +37,7 @@ class PixelBridgeVanilla:
         font_btn_lrg = ("Helvetica", 14, "bold")
 
         # --- Title Section ---
-        tk.Label(self.root, text="PixelBridge", font=font_title, bg="#F3F4F6", fg="#1F2937").pack(pady=(20, 5))
+        tk.Label(self.root, text="SwitchPic", font=font_title, bg="#F3F4F6", fg="#1F2937").pack(pady=(20, 5))
         tk.Label(self.root, text="Seamless Image Format Conversion", font=font_sub, bg="#F3F4F6", fg="#6B7280").pack(pady=(0, 20))
 
         # --- Card 1: Upload Section ---
@@ -141,5 +141,5 @@ class PixelBridgeVanilla:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = PixelBridgeVanilla(root)
+    app = SwitchPicVanilla(root)
     root.mainloop()

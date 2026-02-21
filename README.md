@@ -1,5 +1,4 @@
-# Image Format Changer
-
+# SwitchPic-Py
 A small Tkinter GUI utility to convert images between common formats using Pillow (PIL).
 
 ## Project structure
